@@ -13,7 +13,7 @@ actually arrived and compares that to every prediction made about it.
 
 ### [unisys](https://github.com/xMik3/unisys)
 
-A REST API for a university management system, built around three roles.
+University management system REST API in TypeScript, built around three roles.
 Students browse the course catalogue, register for courses and see their
 grades. Teachers see the courses they have been assigned and grade the
 students registered in them. A Secretary sits above both, with full CRUD
