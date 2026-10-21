@@ -7,8 +7,8 @@ CE student in Athens.
 How accurate are Athens bus ETAs, and what kind of model is behind them?
 
 I built a Node collector that polls OASA's live feed every 45 seconds and
-saves everything to MySQL. It has been running since the 27th of July 2026 and has collected
-744k predictions so far. A pandas pipeline then works out when each bus
+saves everything to MySQL. It ran from the start of August to the end of September 
+and collected 1.92 million predictions. A pandas pipeline then works out when each bus
 actually arrived and compares that to every prediction made about it.
 
 ### [unisys](https://github.com/xMik3/unisys)
@@ -19,11 +19,9 @@ grades. Teachers see the courses they have been assigned and grade the
 students registered in them. A Secretary sits above both, with full CRUD
 over students, teachers and courses, assigning teachers to courses.
 
-[Try it live in Swagger](https://unisys.250724.xyz/docs)
-
 ### homelab
 
-The server the two projects above actually run on. Everything is
+The server the oasa-accuracy project actually ran on. Everything is
 containerized behind Traefik with Let's Encrypt TLS, and internal access goes over
 WireGuard. Grafana sits on top of Prometheus
 and node-exporter for host metrics, Traefik access logs for who is probing
@@ -43,6 +41,6 @@ which got merged upstream.
 
 ---
 
-**Stack:** JavaScript/Node, Python, MySQL, Docker
+**Stack:** TypeScript/Node, Python, MySQL, Docker
 
 **Reach me:** ieronymidismichael@gmail.com
